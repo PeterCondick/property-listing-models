@@ -1,4 +1,6 @@
 const {Property} = require('./models/property');
-const mongoose = require('./db/mongoose');
+const mongSetup = require('./db/mongoose');
 
-module.exports = {Property};
+console.log('in index mongSetup', mongSetup);
+
+module.exports = {Property, mongSetup};

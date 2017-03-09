@@ -2,7 +2,8 @@ const mongoose = require('mongoose');
 
 var PropertySchema = new mongoose.Schema({
   listing_id: {
-    type: String
+    type: String,
+    index: true
   },
   property_report_url: {
     type: String
